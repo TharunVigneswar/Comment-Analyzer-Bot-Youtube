@@ -37,7 +37,7 @@ else:
     request = youtube.commentThreads().list(
         part="snippet",
         videoId=video_id,
-        maxResults=5
+        maxResults=100
     )
     response = request.execute()
 
